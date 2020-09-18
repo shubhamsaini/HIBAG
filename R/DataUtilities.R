@@ -1274,6 +1274,7 @@ hlaCombineAllele <- function(H1, H2)
     stopifnot(inherits(H2, "hlaAlleleClass"))
     stopifnot(length(intersect(H1$sample.id, H2$sample.id)) == 0L)
     stopifnot(H1$locus == H2$locus)
+    print(paste("pos.start", H1$pos.start, H2$pos.start))    
     stopifnot(H1$pos.start == H2$pos.start)
     stopifnot(H1$pos.end == H2$pos.end)
 
